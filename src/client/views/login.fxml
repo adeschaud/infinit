@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane prefHeight="144.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label text="Authentification" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.4000244140625" minWidth="10.0" prefWidth="195.39997100830078" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="310.60002899169916" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.40000762939454" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="254.8" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="333.6" minHeight="10.0" prefHeight="333.6" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Username :" />
+            <Label text="Password :" GridPane.rowIndex="1" />
+            <TextField alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER" />
+            <TextField maxWidth="-Infinity" prefHeight="26.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <HBox prefHeight="50.0" prefWidth="258.0" spacing="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="322.0" text="Se connecter" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="297.0" text="Quitter" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </GridPane>
+   </center>
+</BorderPane>
